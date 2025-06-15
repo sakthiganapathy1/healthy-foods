@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Healthy Food's</title>
+    <link rel="shortcut icon" href="./src/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/custom.css">
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="img-fluid me-5" src="./src/img/logo.png" alt="logo"
+                        width="110px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control box" type="search" placeholder="Search" aria-label="Search">
+                        <a href="#"><img class="img-fluid box2 p-3" src="./src/icons/search Icon.png" alt="search icon"
+                                width="50px" height="35px"></a>
+                    </form>
+                    <ul class="navbar-nav ms-auto gap-4 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <p class="mb-1 txt1 p-0 h6">hello!</p>
+                            <a class="nav-link fw-bold p-0" aria-current="page" href="#">Sign In or Register</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-end">
+                            <div class="d-flex align-items-center position-relative">
+                                <a href="#"><img class="img-fluid" src="./src/icons/cart Icon.png" alt="cart"
+                                        width="20px"></a>
+                                <span id="cartCount"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                    style="display: none;">0</span>
+                                <a class="nav-link fw-bold pb-0" href="#">My Basket</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-flex align-items-end">
+                            <div class=" d-flex align-items-center">
+                                <a href="#"><img class="img-fluid" src="./src/icons/wishlist icon.png" alt="cart"
+                                        width="20px"></a>
+                                <a class="nav-link fw-bold pb-0" href="#">wishlist</a>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- navbar ends here -->
+
+    <!-- navbar starts's hear -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-center txt3" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-center txt3" href="#Health Mix">Health Mix</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-center txt3" href="#Porridge Mix">Porridge Mix</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-center txt3" href="#Malt / Milk Treat">Malt / Milk Treat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-center txt3" href="#Breakfast Mix">Breakfast Mix</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-center txt3" href="#Herbal Tea">Herbal Tea</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-center txt3" href="#Rice mix">Rice Mix</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- navbar end's hear -->
+
+    <!-- banner starts here -->
+    <section class="container-fluid bg" id="Home">
+
+    </section>
+    <!-- banner ends here -->
+
+    <!--  Health Mix starts here -->
+    <section class="container" id="Health Mix">
+        <p class="my-5 h2 fw-bold text-center">Health Mix</p>
+        <div class="p-0 d-flex flex-wrap">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Health Mix ends here -->
+
+    <!--   Porridge Mix starts here -->
+    <section class="container ">
+        <p class="my-5 text-center h2 fw-bold" id="Porridge Mix"> Porridge Mix</p>
+        <div class="p-0 d-flex justify-content-center flex-wrap">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--   Porridge Mix ends here -->
+
+    <!-- ad starts here -->
+    <section class="container-fluid p-0 mt-6">
+        <div class="d-flex justify-content-center flex-wrap">
+            <div class="col-12 col-md-4 p-5 bg1 d-flex justify-content-center align-items-center">
+                <div class="text-start">
+                    <p class="mb-3 h4">Health Mix</p>
+                    <p class="h2 fw-bold mb-3"> Pregnant <br> Lacto </p>
+                    <p class="h5">250 g</p>
+                </div>
+                <img src="./src/img/mockup packet.png" class="img-fluid m-4 animstion" alt="..." width="45%">
+            </div>
+            <div class="col-12 col-md-4 p-5 bg2 d-flex justify-content-center align-items-center">
+                <div class="text-start">
+                    <p class="mb-3 h4">Milk Treat</p>
+                    <p class="h2 fw-bold mb-3">Beetroot <br> Milk</p>
+                    <p class="h5">250 g</p>
+                </div>
+                <img src="./src/img/mockup packet.png" class="img-fluid m-4 animstion" alt="..." width="45%">
+            </div>
+            <div class="col-12 col-md-4 p-5 bg3 d-flex justify-content-center align-items-center">
+                <div class="text-start">
+                    <p class="mb-3 h4">Herbal Tea</p>
+                    <p class="h2 fw-bold mb-3">Avaram <br> Poo Tea </p>
+                    <p class="h5">250 g</p>
+                </div>
+                <img src="./src/img/mockup packet.png" class="img-fluid m-4 animstion" alt="..." width="45%">
+            </div>
+
+        </div>
+    </section>
+    <!-- ad ends here -->
+
+    <!--    Malt / Milk Treat starts here -->
+    <section class="container ">
+        <p class="my-5 text-center h2 fw-bold" id="Malt / Milk Treat"> Malt / Milk Treat</p>
+        <div class="p-0 d-flex justify-content-center flex-wrap">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Malt / Milk Treat ends here -->
+
+    <!--     Breakfast Mix starts here -->
+    <section class="container mb-5">
+        <p class="my-5 text-center h2 fw-bold" id="Breakfast Mix"> Breakfast Mix</p>
+        <div class="p-0 d-flex justify-content-center flex-wrap">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     Breakfast Mix ends here -->
+
+    <!--     Herbal Tea starts here -->
+    <section class="container mb-5">
+        <p class="my-5 text-center h2 fw-bold" id="Herbal Tea">Herbal Tea</p>
+        <div class="p-0 d-flex justify-content-center flex-wrap">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     Herbal Tea ends here -->
+
+    <!--     rice mix starts here -->
+    <section class="container mb-5">
+        <p class="my-5 text-center h2 fw-bold" id="Rice mix">Rice mix</p>
+        <div class="p-0 d-flex justify-content-center flex-wrap">
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                <div class="card animstion2" style="width: 18rem;">
+                    <img src="./src/img/mockup.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title quinary-color">In stock!</h5>
+                        <p class="card-text mb-0">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <p class="card-text fw-bold">Rs. 250.00</p>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-selector d-flex justify-content-center align-items-center">
+                                <button class="btn fw-bold"
+                                    onclick="decreaseQuantity(this.parentElement.querySelector('input'))">-</button>
+                                <input type="text" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                                <button class="btn fw-bold"
+                                    onclick="increaseQuantity(this.parentElement.querySelector('input'))">+</button>
+                            </div>
+                            <button class="btn btn-purple ms-3" onclick="addToCart(this)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--     rice mix ends here -->
+
+    <!-- customers review starts here -->
+    <section class="container">
+        <p class="h2 text-center mb-3"> Our Happy Customers</p>
+        <div class="d-flex justify-content-center flex-wrap">
+            <div class="col-12 col-md-4 p-4">
+                <img src="./src/img/5-star-rating.png" alt="rating" class="img-fluid mb-3" width="30%">
+                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, debitis? Rerum
+                    necessitatibus iusto
+                    voluptate ducimus alias aliquid, nihil asperiores sit deleniti ea perferendis distinctio amet eaque
+                    nesciunt, est aliquam. Animi?</p>
+                <p><b>Lorem ipsum</b> - Customer</p>
+            </div>
+            <div class="col-12 col-md-4 p-4">
+                <img src="./src/img/5-star-rating.png" alt="rating" class="img-fluid mb-3" width="30%">
+                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, debitis? Rerum
+                    necessitatibus iusto
+                    voluptate ducimus alias aliquid, nihil asperiores sit deleniti ea perferendis distinctio amet eaque
+                    nesciunt, est aliquam. Animi?</p>
+                <p><b>Lorem ipsum</b> - Customer</p>
+            </div>
+            <div class="col-12 col-md-4 p-4">
+                <img src="./src/img/5-star-rating.png" alt="rating" class="img-fluid mb-3" width="30%">
+                <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, debitis? Rerum
+                    necessitatibus iusto
+                    voluptate ducimus alias aliquid, nihil asperiores sit deleniti ea perferendis distinctio amet eaque
+                    nesciunt, est aliquam. Animi?</p>
+                <p><b>Lorem ipsum</b> - Customer</p>
+            </div>
+        </div>
+    </section>
+    <!-- customers review ends here -->
+
+    <!-- Footer section starts here -->
+    <section class="container-fluid bg4">
+        <div class="container pt-5 px-0 d-flex justify-content-center flex-wrap">
+            <div class="col-12 col-md-4 mb-4 d-flex justify-content-center align-items-center">
+                <p class="mb-0 px-4 ps-0 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+                    debitis? Rerum
+                    necessitatibus iusto
+                    voluptate ducimus alias aliquid, nihil asperiores sit deleniti ea perferendis distinctio amet eaque
+                    nesciunt, est aliquam.</p>
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+                <p class="h4 fw-bold text-white">Our Store</p>
+                <a href="">
+                    <p class="mb-2 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, debitis?
+                        Rerum
+                        necessitatibus iusto</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">9876543210</p>
+                </a>
+                <a href="">
+                    <p class="mb-0 text-white">example@gmail.com</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+                <p class="h4 fw-bold text-white">Information</p>
+                <a href="">
+                    <p class="mb-2 text-white">Privacy Policy</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Refund Policy</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Shipping Policy</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Terms of Service</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+                <p class="h4 fw-bold text-white">Services</p>
+                <a href="">
+                    <p class="mb-2 text-white">Privacy Policy</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Refund Policy</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Shipping Policy</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Terms of Service</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-2 mb-4">
+                <p class="h4 fw-bold text-white">Help</p>
+                <a href="">
+                    <p class="mb-2 text-white">About Us</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Whatsapp Us</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Contact Us</p>
+                </a>
+                <a href="">
+                    <p class="mb-2 text-white">Our Store</p>
+                </a>
+            </div>
+        </div>
+        <!-- copyrights starts here -->
+        <div class="container-fluid w-100">
+            <p class="line my-3"></p>
+            <p class="mb-0 pb-3 text-center text-white">Copyright © 2025. All rights reserved.</p>
+        </div>
+        <!-- copyrights ends here -->
+    </section>
+    <!-- Footer section ends here-->
+
+
+
+
+
+
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/custom script.js"></script>
+</body>
+
+</html>
